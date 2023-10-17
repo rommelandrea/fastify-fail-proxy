@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "$id": "schema:dotenv",
+    "required": [
+      "NODE_ENV",
+      "UPSTREAM_VIDEO_URL"
+    ],
+    "properties": {
+      "NODE_ENV": {
+        "type": "string",
+        "default": "production"
+      },
+      "UPSTREAM_VIDEO_URL": {
+        "type": "string",
+        "default": "https://httpbin.org"
+      },
+      "EXPIRE_IN": {
+        "type": "number",
+        "default": 60000
+      }
+    }
+  }
+  
