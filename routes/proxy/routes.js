@@ -4,7 +4,7 @@ export const prefixOverride = '/api/v1/proxy'
 
 export default async function (fastify, opts) {
   fastify.register(proxy, {
-    upstream: fastify.secrets.UPSTREAM_VIDEO_URL,
+    upstream: fastify.secrets.UPSTREAM_URL,
     rewritePrefix: '/get',
     httpMethods: ['GET'],
     preHandler: async (request, reply) => {
